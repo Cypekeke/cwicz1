@@ -8,7 +8,7 @@ public class cwicz1 {
         System.out.println("Hello from main");
         int number = input("Podaj liczbę: ");
         System.out.println(number);
-        int secondNumber = input("Podaj kwotę zakupu");
+        int secondNumber = input("Podaj kwotę zakupu: ");
         System.out.println(secondNumber);
 //        System.out.println("KALKULATOR - Podaj liczby a następnie wybierz działanie");
 //
