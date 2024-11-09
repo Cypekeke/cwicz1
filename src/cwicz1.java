@@ -25,7 +25,7 @@ public class cwicz1 {
         double result = 0;
         switch (choice) {
             case 1:
-                result = FirstNumber + SecondNumber;
+                result = (FirstNumber + SecondNumber);
                 break;
             case 2:
                 result = FirstNumber - SecondNumber;
@@ -44,7 +44,7 @@ public class cwicz1 {
                 System.out.println("Nieprawidłowy wybór działania.");
                 
         }
-        if (result >= 1 && result <= 4) {
+        if (choice >= 1 && choice <= 4) {
             System.out.println("Wynik: " + result);
         }
     }
