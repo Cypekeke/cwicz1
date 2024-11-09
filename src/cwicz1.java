@@ -3,6 +3,8 @@ import java.util.Scanner;
 // dodatkowo wypadaloby zrobic try/catch
 public class cwicz1 {
     public static void main(String[] args) {
+        System.out.println("KALKULATOR - Podaj liczby a następnie wybierz działanie");
+        
         Scanner input = new Scanner(System.in);
         System.out.println("Podaj pierwszą liczbę: ");
         double FirstNumber = input.nextDouble();
@@ -18,8 +20,9 @@ public class cwicz1 {
         System.out.println("4. Dzielenie");
         System.out.println("------------------");
         int choice = input.nextInt();
+        input.close();
 
-        double result;
+        double result = 0;
         switch (choice) {
             case 1:
                 result = FirstNumber + SecondNumber;
@@ -32,14 +35,18 @@ public class cwicz1 {
                 break;
             case 4:
                 if (SecondNumber == 0) {
-                    System.out.println("Nie można dzielić przez 0!");
+                    System.out.println("Nie można dzielić przez 0.");
                 } else {
                     result = FirstNumber / SecondNumber;
                 }
+                break;
             default:
-               // System.out.println("Wynik: " + result);
+                System.out.println("Nieprawidłowy wybór działania.");
+                
         }
-        System.out.println("Wynik: " + result);
+        if (result >= 1 && result <= 4) {
+            System.out.println("Wynik: " + result);
+        }
     }
 }
 
